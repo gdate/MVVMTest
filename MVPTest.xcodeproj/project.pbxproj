@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		9F86F0EF239CB2CB00B2436A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F0EE239CB2CB00B2436A /* AppDelegate.swift */; };
-		9F86F0F1239CB2CB00B2436A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F0F0239CB2CB00B2436A /* SceneDelegate.swift */; };
-		9F86F0F3239CB2CB00B2436A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F0F2239CB2CB00B2436A /* ViewController.swift */; };
+		9F86F0F3239CB2CB00B2436A /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F0F2239CB2CB00B2436A /* SearchUserViewController.swift */; };
 		9F86F0F6239CB2CB00B2436A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F0F4239CB2CB00B2436A /* Main.storyboard */; };
 		9F86F0F8239CB2D100B2436A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F0F7239CB2D100B2436A /* Assets.xcassets */; };
 		9F86F0FB239CB2D100B2436A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F0F9239CB2D100B2436A /* LaunchScreen.storyboard */; };
+		9F86F103239CBA2100B2436A /* SearchUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F102239CBA2100B2436A /* SearchUserPresenter.swift */; };
+		9F86F105239CBD3400B2436A /* SearchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F104239CBD3400B2436A /* SearchUserModel.swift */; };
+		9F86F107239D258300B2436A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F106239D258300B2436A /* User.swift */; };
+		9F86F10B239D2D1D00B2436A /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F10A239D2D1D00B2436A /* UIImageView.swift */; };
+		9F86F10D239D3BF900B2436A /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F10C239D3BF900B2436A /* SearchUserCell.swift */; };
+		9F86F10F239D3C2000B2436A /* SearchUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F10E239D3C2000B2436A /* SearchUserCell.xib */; };
+		9F86F111239D3DF800B2436A /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F110239D3DF800B2436A /* UITableView.swift */; };
+		9F86F113239D488000B2436A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F112239D488000B2436A /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F86F0EB239CB2CB00B2436A /* MVPTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F86F0EE239CB2CB00B2436A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F86F0F0239CB2CB00B2436A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F86F0F2239CB2CB00B2436A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F86F0F2239CB2CB00B2436A /* SearchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
 		9F86F0F5239CB2CB00B2436A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F86F0F7239CB2D100B2436A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F86F0FA239CB2D100B2436A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F86F0FC239CB2D100B2436A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F86F102239CBA2100B2436A /* SearchUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserPresenter.swift; sourceTree = "<group>"; };
+		9F86F104239CBD3400B2436A /* SearchUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserModel.swift; sourceTree = "<group>"; };
+		9F86F106239D258300B2436A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9F86F10A239D2D1D00B2436A /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		9F86F10C239D3BF900B2436A /* SearchUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserCell.swift; sourceTree = "<group>"; };
+		9F86F10E239D3C2000B2436A /* SearchUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchUserCell.xib; sourceTree = "<group>"; };
+		9F86F110239D3DF800B2436A /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		9F86F112239D488000B2436A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				9F86F0ED239CB2CB00B2436A /* MVPTest */,
-				9F86F0EC239CB2CB00B2436A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,18 +64,27 @@
 				9F86F0EB239CB2CB00B2436A /* MVPTest.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		9F86F0ED239CB2CB00B2436A /* MVPTest */ = {
 			isa = PBXGroup;
 			children = (
 				9F86F0EE239CB2CB00B2436A /* AppDelegate.swift */,
-				9F86F0F0239CB2CB00B2436A /* SceneDelegate.swift */,
-				9F86F0F2239CB2CB00B2436A /* ViewController.swift */,
+				9F86F0F2239CB2CB00B2436A /* SearchUserViewController.swift */,
+				9F86F102239CBA2100B2436A /* SearchUserPresenter.swift */,
+				9F86F104239CBD3400B2436A /* SearchUserModel.swift */,
+				9F86F106239D258300B2436A /* User.swift */,
+				9F86F10C239D3BF900B2436A /* SearchUserCell.swift */,
+				9F86F10E239D3C2000B2436A /* SearchUserCell.xib */,
 				9F86F0F4239CB2CB00B2436A /* Main.storyboard */,
+				9F86F10A239D2D1D00B2436A /* UIImageView.swift */,
+				9F86F110239D3DF800B2436A /* UITableView.swift */,
+				9F86F112239D488000B2436A /* UIViewController.swift */,
 				9F86F0F7239CB2D100B2436A /* Assets.xcassets */,
 				9F86F0F9239CB2D100B2436A /* LaunchScreen.storyboard */,
 				9F86F0FC239CB2D100B2436A /* Info.plist */,
+				9F86F0EC239CB2CB00B2436A /* Products */,
 			);
 			path = MVPTest;
 			sourceTree = "<group>";
@@ -125,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F86F10F239D3C2000B2436A /* SearchUserCell.xib in Resources */,
 				9F86F0FB239CB2D100B2436A /* LaunchScreen.storyboard in Resources */,
 				9F86F0F8239CB2D100B2436A /* Assets.xcassets in Resources */,
 				9F86F0F6239CB2CB00B2436A /* Main.storyboard in Resources */,
@@ -138,9 +161,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F86F0F3239CB2CB00B2436A /* ViewController.swift in Sources */,
+				9F86F10D239D3BF900B2436A /* SearchUserCell.swift in Sources */,
+				9F86F105239CBD3400B2436A /* SearchUserModel.swift in Sources */,
+				9F86F113239D488000B2436A /* UIViewController.swift in Sources */,
+				9F86F0F3239CB2CB00B2436A /* SearchUserViewController.swift in Sources */,
+				9F86F10B239D2D1D00B2436A /* UIImageView.swift in Sources */,
+				9F86F107239D258300B2436A /* User.swift in Sources */,
+				9F86F111239D3DF800B2436A /* UITableView.swift in Sources */,
 				9F86F0EF239CB2CB00B2436A /* AppDelegate.swift in Sources */,
-				9F86F0F1239CB2CB00B2436A /* SceneDelegate.swift in Sources */,
+				9F86F103239CBA2100B2436A /* SearchUserPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
