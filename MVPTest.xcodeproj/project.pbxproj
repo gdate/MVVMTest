@@ -20,6 +20,13 @@
 		9F86F10F239D3C2000B2436A /* SearchUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F10E239D3C2000B2436A /* SearchUserCell.xib */; };
 		9F86F111239D3DF800B2436A /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F110239D3DF800B2436A /* UITableView.swift */; };
 		9F86F113239D488000B2436A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F112239D488000B2436A /* UIViewController.swift */; };
+		9F86F115239E620900B2436A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F114239E620900B2436A /* UserDetailViewController.swift */; };
+		9F86F117239E62AE00B2436A /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F116239E62AE00B2436A /* UserDetailPresenter.swift */; };
+		9F86F119239E62C100B2436A /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F118239E62C100B2436A /* UserDetailModel.swift */; };
+		9F86F11B239E659400B2436A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F11A239E659400B2436A /* Repository.swift */; };
+		9F86F11F239E839900B2436A /* UserDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F11E239E839900B2436A /* UserDetailCell.swift */; };
+		9F86F121239E83B500B2436A /* UserDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F120239E83B500B2436A /* UserDetailCell.xib */; };
+		9F86F123239E9BA100B2436A /* UserDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F122239E9BA100B2436A /* UserDetailViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		9F86F10E239D3C2000B2436A /* SearchUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchUserCell.xib; sourceTree = "<group>"; };
 		9F86F110239D3DF800B2436A /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		9F86F112239D488000B2436A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		9F86F114239E620900B2436A /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		9F86F116239E62AE00B2436A /* UserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
+		9F86F118239E62C100B2436A /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
+		9F86F11A239E659400B2436A /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		9F86F11E239E839900B2436A /* UserDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCell.swift; sourceTree = "<group>"; };
+		9F86F120239E83B500B2436A /* UserDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailCell.xib; sourceTree = "<group>"; };
+		9F86F122239E9BA100B2436A /* UserDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetailViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +88,16 @@
 				9F86F0F2239CB2CB00B2436A /* SearchUserViewController.swift */,
 				9F86F102239CBA2100B2436A /* SearchUserPresenter.swift */,
 				9F86F104239CBD3400B2436A /* SearchUserModel.swift */,
-				9F86F106239D258300B2436A /* User.swift */,
 				9F86F10C239D3BF900B2436A /* SearchUserCell.swift */,
 				9F86F10E239D3C2000B2436A /* SearchUserCell.xib */,
+				9F86F106239D258300B2436A /* User.swift */,
+				9F86F114239E620900B2436A /* UserDetailViewController.swift */,
+				9F86F122239E9BA100B2436A /* UserDetailViewController.storyboard */,
+				9F86F116239E62AE00B2436A /* UserDetailPresenter.swift */,
+				9F86F118239E62C100B2436A /* UserDetailModel.swift */,
+				9F86F11E239E839900B2436A /* UserDetailCell.swift */,
+				9F86F120239E83B500B2436A /* UserDetailCell.xib */,
+				9F86F11A239E659400B2436A /* Repository.swift */,
 				9F86F0F4239CB2CB00B2436A /* Main.storyboard */,
 				9F86F10A239D2D1D00B2436A /* UIImageView.swift */,
 				9F86F110239D3DF800B2436A /* UITableView.swift */,
@@ -150,7 +171,9 @@
 				9F86F10F239D3C2000B2436A /* SearchUserCell.xib in Resources */,
 				9F86F0FB239CB2D100B2436A /* LaunchScreen.storyboard in Resources */,
 				9F86F0F8239CB2D100B2436A /* Assets.xcassets in Resources */,
+				9F86F121239E83B500B2436A /* UserDetailCell.xib in Resources */,
 				9F86F0F6239CB2CB00B2436A /* Main.storyboard in Resources */,
+				9F86F123239E9BA100B2436A /* UserDetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,12 +187,17 @@
 				9F86F10D239D3BF900B2436A /* SearchUserCell.swift in Sources */,
 				9F86F105239CBD3400B2436A /* SearchUserModel.swift in Sources */,
 				9F86F113239D488000B2436A /* UIViewController.swift in Sources */,
+				9F86F11B239E659400B2436A /* Repository.swift in Sources */,
 				9F86F0F3239CB2CB00B2436A /* SearchUserViewController.swift in Sources */,
+				9F86F117239E62AE00B2436A /* UserDetailPresenter.swift in Sources */,
 				9F86F10B239D2D1D00B2436A /* UIImageView.swift in Sources */,
 				9F86F107239D258300B2436A /* User.swift in Sources */,
+				9F86F119239E62C100B2436A /* UserDetailModel.swift in Sources */,
+				9F86F115239E620900B2436A /* UserDetailViewController.swift in Sources */,
 				9F86F111239D3DF800B2436A /* UITableView.swift in Sources */,
 				9F86F0EF239CB2CB00B2436A /* AppDelegate.swift in Sources */,
 				9F86F103239CBA2100B2436A /* SearchUserPresenter.swift in Sources */,
+				9F86F11F239E839900B2436A /* UserDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

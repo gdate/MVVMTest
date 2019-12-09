@@ -14,13 +14,10 @@ class SearchUserViewController: UIViewController {
     
     private var presenter: SearchUserPresenterInput!
     
-    func inject(presenter: SearchUserPresenterInput) {
-        self.presenter = presenter
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        inject(presenter: SearchUserPresenter(view: self, model: SearchUserModel()))
+        
+        presenter = SearchUserPresenter(view: self, model: SearchUserModel())
         tableView.registerCell(type: SearchUserCell.self)
     }
 }
@@ -61,15 +58,10 @@ extension SearchUserViewController: SearchUserPresenterOutput {
     }
     
     func transitionToUserDetail(userName: String) {
-//        let userDetailVC = UIStoryboard(name: "UserDetail",
-//                                        bundle: nil)
-//            .instantiateInitialViewController() as! UserDetailViewController
-//        let model = UserDetailModel(userName: userName)
-//        let presenter = UserDetailPresenter(
-//            userName: userName,
-//            view: userDetailVC,
-//            model: model)
-//        userDetailVC.inject(presenter: presenter)
-//        navigationController?.pushViewController(userDetailVC, animated: true)
+        let userDetailViewController = UserDetailViewController.instantiate(type: UserDetailViewController.self)
+        let model = UserDetailModel(userName: userName)
+        let presenter = UserDetailPresenter(userName: userName, view: userDetailViewController, model: model)
+        userDetailViewController.inject(presenter: presenter)
+        navigationController?.pushViewController(userDetailViewController, animated: true)
     }
 }

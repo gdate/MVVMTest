@@ -40,8 +40,8 @@ final class SearchUserPresenter: SearchUserPresenterInput {
     }
     
     func didSelectRow(at indexPath: IndexPath) {
-//        guard let user = user(forRow: indexPath.row) else { return }
-//        view.transitionToUserDetail(userName: user.login)
+        guard let user = user(forRow: indexPath.row) else { return }
+        view.transitionToUserDetail(userName: user.name)
     }
     
     func didTapSearchButton(text: String?) {

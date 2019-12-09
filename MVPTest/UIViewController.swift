@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-    func instantiate<T: UIViewController>(type: T.Type) -> T {
+    static func instantiate<T: UIViewController>(type: T.Type) -> T {
         let className = String(describing: T.self)
         let storyboard = UIStoryboard(name: className, bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: className) as! T
