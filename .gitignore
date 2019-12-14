@@ -28,4 +28,4 @@ Podfile.lock
 .DS_Store
 
 # Carthage
-Carthage/Build
+Carthage/*
