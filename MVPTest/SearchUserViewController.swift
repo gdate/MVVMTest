@@ -59,7 +59,7 @@ extension SearchUserViewController: SearchUserPresenterOutput {
     
     func transitionToUserDetail(userName: String) {
         let userDetailViewController = UserDetailViewController.instantiate(type: UserDetailViewController.self)
-        let model = UserDetailModel(userName: userName)
+        let model = UserDetailModel()
         let presenter = UserDetailPresenter(userName: userName, view: userDetailViewController, model: model)
         userDetailViewController.inject(presenter: presenter)
         navigationController?.pushViewController(userDetailViewController, animated: true)

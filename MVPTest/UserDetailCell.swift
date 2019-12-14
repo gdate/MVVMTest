@@ -17,6 +17,12 @@ final class UserDetailCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        repositoryName.text = ""
+        repositoryDescription.text = ""
+        repositoryLanguage.text = ""
+        starCount.text = ""
+        falkCount.text = ""
     }
     
     func configure(repository: Repository) {

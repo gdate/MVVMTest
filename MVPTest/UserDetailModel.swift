@@ -13,8 +13,6 @@ protocol UserDetailModelInput {
 }
 
 final class UserDetailModel: UserDetailModelInput {
-    private let userName: String
-    
     private let mockRepositories = [
         Repository(name: "SugoiLibrary", author: "sato", description: "sugoi", language: "Objective-C", star: 0, falk: 0),
         Repository(name: "YabaiLibrary", author: "sato", description: "yabai", language: "Swift", star: 0, falk: 0),
@@ -25,10 +23,6 @@ final class UserDetailModel: UserDetailModelInput {
         Repository(name: "YamadaLibrary", author: "yamada", description: "hoge", language: "Swift", star: 100000, falk: 1000),
         Repository(name: "InoueLibrary", author: "inoue", description: "foo", language: "Swift", star: 3000, falk: 18)
     ]
-    
-    init(userName: String) {
-        self.userName = userName
-    }
     
     func fetchRepository(query: String, completion: @escaping (Result<[Repository], Error>) -> ()) {
         let match: [Repository] = mockRepositories.reduce(into: []) { (result, repository) in
