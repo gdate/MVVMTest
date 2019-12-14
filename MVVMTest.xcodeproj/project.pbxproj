@@ -7,30 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F86F0EF239CB2CB00B2436A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F0EE239CB2CB00B2436A /* AppDelegate.swift */; };
-		9F86F0F3239CB2CB00B2436A /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F0F2239CB2CB00B2436A /* SearchUserViewController.swift */; };
-		9F86F0F6239CB2CB00B2436A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F0F4239CB2CB00B2436A /* Main.storyboard */; };
-		9F86F0F8239CB2D100B2436A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F0F7239CB2D100B2436A /* Assets.xcassets */; };
-		9F86F0FB239CB2D100B2436A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F0F9239CB2D100B2436A /* LaunchScreen.storyboard */; };
-		9F86F103239CBA2100B2436A /* SearchUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F102239CBA2100B2436A /* SearchUserPresenter.swift */; };
-		9F86F105239CBD3400B2436A /* SearchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F104239CBD3400B2436A /* SearchUserModel.swift */; };
-		9F86F107239D258300B2436A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F106239D258300B2436A /* User.swift */; };
-		9F86F10B239D2D1D00B2436A /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F10A239D2D1D00B2436A /* UIImageView.swift */; };
-		9F86F10D239D3BF900B2436A /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F10C239D3BF900B2436A /* SearchUserCell.swift */; };
-		9F86F10F239D3C2000B2436A /* SearchUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F10E239D3C2000B2436A /* SearchUserCell.xib */; };
-		9F86F111239D3DF800B2436A /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F110239D3DF800B2436A /* UITableView.swift */; };
-		9F86F113239D488000B2436A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F112239D488000B2436A /* UIViewController.swift */; };
-		9F86F115239E620900B2436A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F114239E620900B2436A /* UserDetailViewController.swift */; };
-		9F86F117239E62AE00B2436A /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F116239E62AE00B2436A /* UserDetailPresenter.swift */; };
-		9F86F119239E62C100B2436A /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F118239E62C100B2436A /* UserDetailModel.swift */; };
-		9F86F11B239E659400B2436A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F11A239E659400B2436A /* Repository.swift */; };
-		9F86F11F239E839900B2436A /* UserDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F11E239E839900B2436A /* UserDetailCell.swift */; };
-		9F86F121239E83B500B2436A /* UserDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F120239E83B500B2436A /* UserDetailCell.xib */; };
-		9F86F123239E9BA100B2436A /* UserDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F122239E9BA100B2436A /* UserDetailViewController.storyboard */; };
+		9F86F12623A4CDB600B2436A /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F10C239D3BF900B2436A /* SearchUserCell.swift */; };
+		9F86F12723A4CDB600B2436A /* SearchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F104239CBD3400B2436A /* SearchUserModel.swift */; };
+		9F86F12823A4CDB600B2436A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F112239D488000B2436A /* UIViewController.swift */; };
+		9F86F12923A4CDB600B2436A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F11A239E659400B2436A /* Repository.swift */; };
+		9F86F12A23A4CDB600B2436A /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F0F2239CB2CB00B2436A /* SearchUserViewController.swift */; };
+		9F86F12B23A4CDB600B2436A /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F116239E62AE00B2436A /* UserDetailPresenter.swift */; };
+		9F86F12C23A4CDB600B2436A /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F10A239D2D1D00B2436A /* UIImageView.swift */; };
+		9F86F12D23A4CDB600B2436A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F106239D258300B2436A /* User.swift */; };
+		9F86F12E23A4CDB600B2436A /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F118239E62C100B2436A /* UserDetailModel.swift */; };
+		9F86F12F23A4CDB600B2436A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F114239E620900B2436A /* UserDetailViewController.swift */; };
+		9F86F13023A4CDB600B2436A /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F110239D3DF800B2436A /* UITableView.swift */; };
+		9F86F13123A4CDB600B2436A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F0EE239CB2CB00B2436A /* AppDelegate.swift */; };
+		9F86F13223A4CDB600B2436A /* SearchUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F102239CBA2100B2436A /* SearchUserPresenter.swift */; };
+		9F86F13323A4CDB600B2436A /* UserDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86F11E239E839900B2436A /* UserDetailCell.swift */; };
+		9F86F13623A4CDB600B2436A /* SearchUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F10E239D3C2000B2436A /* SearchUserCell.xib */; };
+		9F86F13723A4CDB600B2436A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F0F9239CB2D100B2436A /* LaunchScreen.storyboard */; };
+		9F86F13823A4CDB600B2436A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F0F7239CB2D100B2436A /* Assets.xcassets */; };
+		9F86F13923A4CDB600B2436A /* UserDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F120239E83B500B2436A /* UserDetailCell.xib */; };
+		9F86F13A23A4CDB600B2436A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F0F4239CB2CB00B2436A /* Main.storyboard */; };
+		9F86F13B23A4CDB600B2436A /* UserDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F86F122239E9BA100B2436A /* UserDetailViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F86F0EB239CB2CB00B2436A /* MVPTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F86F0EE239CB2CB00B2436A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F86F0F2239CB2CB00B2436A /* SearchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
 		9F86F0F5239CB2CB00B2436A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,10 +51,11 @@
 		9F86F11E239E839900B2436A /* UserDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCell.swift; sourceTree = "<group>"; };
 		9F86F120239E83B500B2436A /* UserDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailCell.xib; sourceTree = "<group>"; };
 		9F86F122239E9BA100B2436A /* UserDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetailViewController.storyboard; sourceTree = "<group>"; };
+		9F86F13F23A4CDB600B2436A /* MVVMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9F86F0E8239CB2CB00B2436A /* Frameworks */ = {
+		9F86F13423A4CDB600B2436A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,20 +68,20 @@
 		9F86F0E2239CB2CB00B2436A = {
 			isa = PBXGroup;
 			children = (
-				9F86F0ED239CB2CB00B2436A /* MVPTest */,
+				9F86F0ED239CB2CB00B2436A /* MVVMTest */,
 			);
 			sourceTree = "<group>";
 		};
 		9F86F0EC239CB2CB00B2436A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F86F0EB239CB2CB00B2436A /* MVPTest.app */,
+				9F86F13F23A4CDB600B2436A /* MVVMTest.app */,
 			);
 			name = Products;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		9F86F0ED239CB2CB00B2436A /* MVPTest */ = {
+		9F86F0ED239CB2CB00B2436A /* MVVMTest */ = {
 			isa = PBXGroup;
 			children = (
 				9F86F0EE239CB2CB00B2436A /* AppDelegate.swift */,
@@ -107,27 +107,27 @@
 				9F86F0FC239CB2D100B2436A /* Info.plist */,
 				9F86F0EC239CB2CB00B2436A /* Products */,
 			);
-			path = MVPTest;
+			path = MVVMTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F86F0EA239CB2CB00B2436A /* MVPTest */ = {
+		9F86F12423A4CDB600B2436A /* MVVMTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F86F0FF239CB2D100B2436A /* Build configuration list for PBXNativeTarget "MVPTest" */;
+			buildConfigurationList = 9F86F13C23A4CDB600B2436A /* Build configuration list for PBXNativeTarget "MVVMTest" */;
 			buildPhases = (
-				9F86F0E7239CB2CB00B2436A /* Sources */,
-				9F86F0E8239CB2CB00B2436A /* Frameworks */,
-				9F86F0E9239CB2CB00B2436A /* Resources */,
+				9F86F12523A4CDB600B2436A /* Sources */,
+				9F86F13423A4CDB600B2436A /* Frameworks */,
+				9F86F13523A4CDB600B2436A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MVPTest;
+			name = MVVMTest;
 			productName = MVPTest;
-			productReference = 9F86F0EB239CB2CB00B2436A /* MVPTest.app */;
+			productReference = 9F86F13F23A4CDB600B2436A /* MVVMTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,13 +139,8 @@
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = gdate;
-				TargetAttributes = {
-					9F86F0EA239CB2CB00B2436A = {
-						CreatedOnToolsVersion = 11.1;
-					};
-				};
 			};
-			buildConfigurationList = 9F86F0E6239CB2CB00B2436A /* Build configuration list for PBXProject "MVPTest" */;
+			buildConfigurationList = 9F86F0E6239CB2CB00B2436A /* Build configuration list for PBXProject "MVVMTest" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,46 +153,46 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F86F0EA239CB2CB00B2436A /* MVPTest */,
+				9F86F12423A4CDB600B2436A /* MVVMTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9F86F0E9239CB2CB00B2436A /* Resources */ = {
+		9F86F13523A4CDB600B2436A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F86F10F239D3C2000B2436A /* SearchUserCell.xib in Resources */,
-				9F86F0FB239CB2D100B2436A /* LaunchScreen.storyboard in Resources */,
-				9F86F0F8239CB2D100B2436A /* Assets.xcassets in Resources */,
-				9F86F121239E83B500B2436A /* UserDetailCell.xib in Resources */,
-				9F86F0F6239CB2CB00B2436A /* Main.storyboard in Resources */,
-				9F86F123239E9BA100B2436A /* UserDetailViewController.storyboard in Resources */,
+				9F86F13623A4CDB600B2436A /* SearchUserCell.xib in Resources */,
+				9F86F13723A4CDB600B2436A /* LaunchScreen.storyboard in Resources */,
+				9F86F13823A4CDB600B2436A /* Assets.xcassets in Resources */,
+				9F86F13923A4CDB600B2436A /* UserDetailCell.xib in Resources */,
+				9F86F13A23A4CDB600B2436A /* Main.storyboard in Resources */,
+				9F86F13B23A4CDB600B2436A /* UserDetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9F86F0E7239CB2CB00B2436A /* Sources */ = {
+		9F86F12523A4CDB600B2436A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F86F10D239D3BF900B2436A /* SearchUserCell.swift in Sources */,
-				9F86F105239CBD3400B2436A /* SearchUserModel.swift in Sources */,
-				9F86F113239D488000B2436A /* UIViewController.swift in Sources */,
-				9F86F11B239E659400B2436A /* Repository.swift in Sources */,
-				9F86F0F3239CB2CB00B2436A /* SearchUserViewController.swift in Sources */,
-				9F86F117239E62AE00B2436A /* UserDetailPresenter.swift in Sources */,
-				9F86F10B239D2D1D00B2436A /* UIImageView.swift in Sources */,
-				9F86F107239D258300B2436A /* User.swift in Sources */,
-				9F86F119239E62C100B2436A /* UserDetailModel.swift in Sources */,
-				9F86F115239E620900B2436A /* UserDetailViewController.swift in Sources */,
-				9F86F111239D3DF800B2436A /* UITableView.swift in Sources */,
-				9F86F0EF239CB2CB00B2436A /* AppDelegate.swift in Sources */,
-				9F86F103239CBA2100B2436A /* SearchUserPresenter.swift in Sources */,
-				9F86F11F239E839900B2436A /* UserDetailCell.swift in Sources */,
+				9F86F12623A4CDB600B2436A /* SearchUserCell.swift in Sources */,
+				9F86F12723A4CDB600B2436A /* SearchUserModel.swift in Sources */,
+				9F86F12823A4CDB600B2436A /* UIViewController.swift in Sources */,
+				9F86F12923A4CDB600B2436A /* Repository.swift in Sources */,
+				9F86F12A23A4CDB600B2436A /* SearchUserViewController.swift in Sources */,
+				9F86F12B23A4CDB600B2436A /* UserDetailPresenter.swift in Sources */,
+				9F86F12C23A4CDB600B2436A /* UIImageView.swift in Sources */,
+				9F86F12D23A4CDB600B2436A /* User.swift in Sources */,
+				9F86F12E23A4CDB600B2436A /* UserDetailModel.swift in Sources */,
+				9F86F12F23A4CDB600B2436A /* UserDetailViewController.swift in Sources */,
+				9F86F13023A4CDB600B2436A /* UITableView.swift in Sources */,
+				9F86F13123A4CDB600B2436A /* AppDelegate.swift in Sources */,
+				9F86F13223A4CDB600B2436A /* SearchUserPresenter.swift in Sources */,
+				9F86F13323A4CDB600B2436A /* UserDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,34 +332,34 @@
 			};
 			name = Release;
 		};
-		9F86F100239CB2D100B2436A /* Debug */ = {
+		9F86F13D23A4CDB600B2436A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MVPTest/Info.plist;
+				INFOPLIST_FILE = "MVVMTest copy-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.gdate.MVPTest;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.gdate.MVVMTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		9F86F101239CB2D100B2436A /* Release */ = {
+		9F86F13E23A4CDB600B2436A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MVPTest/Info.plist;
+				INFOPLIST_FILE = "MVVMTest copy-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.gdate.MVPTest;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.gdate.MVVMTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F86F0E6239CB2CB00B2436A /* Build configuration list for PBXProject "MVPTest" */ = {
+		9F86F0E6239CB2CB00B2436A /* Build configuration list for PBXProject "MVVMTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F86F0FD239CB2D100B2436A /* Debug */,
@@ -383,11 +378,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F86F0FF239CB2D100B2436A /* Build configuration list for PBXNativeTarget "MVPTest" */ = {
+		9F86F13C23A4CDB600B2436A /* Build configuration list for PBXNativeTarget "MVVMTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F86F100239CB2D100B2436A /* Debug */,
-				9F86F101239CB2D100B2436A /* Release */,
+				9F86F13D23A4CDB600B2436A /* Debug */,
+				9F86F13E23A4CDB600B2436A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
