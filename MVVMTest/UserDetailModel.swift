@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
 protocol UserDetailModelInput {
     func fetchRepository(query: String,completion: @escaping (Result<[Repository], Error>) -> ())
@@ -38,5 +40,19 @@ final class UserDetailModel: UserDetailModelInput {
 extension UserDetailModel {
     enum ErrorType: Int, Error {
         case general
+    }
+    
+    func fetch(query: String) -> Single<[Repository]> {
+        return Single<[Repository]>.create { [unowned self] singleEvent in
+            self.fetchRepository(query: query) { result in
+                switch result {
+                case .success(let value):
+                    singleEvent(.success(value))
+                case .failure(let error):
+                    singleEvent(.error(error))
+                }
+            }
+            return Disposables.create()
+        }
     }
 }

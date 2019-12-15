@@ -7,36 +7,45 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
-class SearchUserViewController: UIViewController {
+final class SearchUserViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    private var presenter: SearchUserPresenterInput!
+    private var viewModel: SearchUserViewModel!
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presenter = SearchUserPresenter(view: self, model: SearchUserModel())
+        viewModel = SearchUserViewModel(model: SearchUserModel())
         tableView.registerCell(type: SearchUserCell.self)
+        
+        viewModel.state.subscribe(onNext: { [unowned self] _ in
+            self.tableView.reloadData()
+        }).disposed(by: disposeBag)
     }
 }
 
 extension SearchUserViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        presenter.didTapSearchButton(text: searchBar.text)
+        guard let query = searchBar.text else { return }
+        viewModel.search(query: query)
     }
 }
 
 extension SearchUserViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.numberOfUsers
+        guard let state = viewModel.state.value else { return 0 }
+        return state.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueCell(type: SearchUserCell.self, indexPath: indexPath)
-        guard let user = presenter.user(forRow: indexPath.row) else { return cell }
-        cell.configure(user: user)
+        guard let state = viewModel.state.value else { return cell }
+        cell.configure(user: state[indexPath.row])
         return cell
     }
 }
@@ -44,24 +53,13 @@ extension SearchUserViewController: UITableViewDataSource {
 extension SearchUserViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        presenter.didSelectRow(at: indexPath)
+        guard let state = viewModel.state.value else { return }
+        let userDetailViewController = UserDetailViewController.instantiate(type: UserDetailViewController.self)
+        userDetailViewController.inject(dependency: .init(model: UserDetailModel(), query: state[indexPath.row].name))
+        navigationController?.pushViewController(userDetailViewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 82
-    }
-}
-
-extension SearchUserViewController: SearchUserPresenterOutput {
-    func updateUsers(_ users: [User]) {
-        tableView.reloadData()
-    }
-    
-    func transitionToUserDetail(userName: String) {
-        let userDetailViewController = UserDetailViewController.instantiate(type: UserDetailViewController.self)
-        let model = UserDetailModel()
-        let presenter = UserDetailPresenter(userName: userName, view: userDetailViewController, model: model)
-        userDetailViewController.inject(presenter: presenter)
-        navigationController?.pushViewController(userDetailViewController, animated: true)
     }
 }

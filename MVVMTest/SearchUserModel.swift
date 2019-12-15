@@ -7,12 +7,10 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-protocol SearchUserModelInput {
-    func fetchUser(query: String,completion: @escaping (Result<[User], Error>) -> ())
-}
-
-final class SearchUserModel: SearchUserModelInput {
+final class SearchUserModel {
     private let mockUsers = [
         User(name: "sato", image: URL(string: "https://illustrain.com/img/work/2016/illustrain09-neko9.png")!),
         User(name: "yamada", image: URL(string:"https://illustrain.com/img/work/2016/illustrain02-cat29.png")!),
@@ -33,5 +31,19 @@ final class SearchUserModel: SearchUserModelInput {
 extension SearchUserModel {
     enum ErrorType: Int, Error {
         case general
+    }
+    
+    func fetch(query: String) -> Single<[User]> {
+        return Single<[User]>.create { [unowned self] singleEvent in
+            self.fetchUser(query: query) { result in
+                switch result {
+                case .success(let value):
+                    singleEvent(.success(value))
+                case .failure(let error):
+                    singleEvent(.error(error))
+                }
+            }
+            return Disposables.create()
+        }
     }
 }
